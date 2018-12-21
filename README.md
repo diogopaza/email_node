@@ -1,4 +1,4 @@
-<h1>Enviar email com o Node JS</h1>
+<h1>mailtrap com o Node JS</h1>
 
 <ul>
     <li>npm init</li>
