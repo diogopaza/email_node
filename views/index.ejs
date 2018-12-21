@@ -9,8 +9,34 @@
     <body>
         <div class="container">
             <h1>Send The Email</h1>
-            <form>
-                
+            <form action="/send-email" method="post">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <label>To:</label>
+                        <input type='email' class='form-control' name='to'>
+                    </div>
+                </div>
+            <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <label>Subject:</label>
+                        <input type='email' class='form-control' name='subject'>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <label>Body:</label>
+                        <textarea cols="5" rows="5" class='form-control' name='body'></textarea>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-success" >Send</button>
+                    </div>
+            </div>
 
             </form>
            

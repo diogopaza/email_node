@@ -1,9 +1,10 @@
 const express = require("express")
-//const bodyParser = require("body-parser")
+const bodyParser = require("body-parser")
 const app = express()
 const nodemailer = require('nodemailer')
 
-
+app.use( bodyParser.urlencoded({ extended:true}) )
+app.use(bodyParser.json())
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
@@ -19,7 +20,7 @@ app.use(express.static('public'))
     const transporter = nodemailer.createTransport( config )
 
 
-//app.use(bodyParser.json())
+
 
 app.get("/", (req, res) => {
     res.render('index')
@@ -30,8 +31,8 @@ app.post("/send-email", (req, res) => {
     
     const message = {
         from: "diogopazacvel@gmail.com",
-        to: "soluçoes@uol.com.br",
-        subject:"Teste de email",
+        to: "testeteste@uol.com.br",
+        subject:"finalll",
         text:"lorem kjasklfjksladjfklasdjfkljsdakfl"
 
     }
